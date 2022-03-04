@@ -1,0 +1,1 @@
+# Netlogix.CkEditor.LinkClass
