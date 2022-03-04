@@ -1,7 +1,8 @@
 {
+  "name": "netlogix/ckeditor-linkclass",
   "description": "",
   "type": "neos-package",
-  "name": "netlogix/ckeditor-linkclass",
+  "license": "MIT",
   "require": {
     "neos/neos": "*"
   },
