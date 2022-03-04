@@ -1,6 +1,6 @@
 {
   "name": "netlogix/ckeditor-linkclass",
-  "description": "",
+  "description": "Adds to the CKEditor 5 the ability to select a class for a link",
   "type": "neos-package",
   "license": "MIT",
   "require": {
