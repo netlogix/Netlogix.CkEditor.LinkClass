@@ -1,0 +1,15 @@
+Neos:
+  Neos:
+    userInterface:
+      translation:
+        autoInclude:
+          Netlogix.CkEditor.LinkClass:
+            - 'CKEditor/*'
+
+    Ui:
+      frontendConfiguration:
+        'Netlogix.CkEditor.LinkClass:options': '${Configuration.setting("Netlogix.CkEditor.LinkClass.options")}'
+      resources:
+        javascript:
+          'Netlogix.CkEditor.LinkClass':
+            resource: resource://Netlogix.CkEditor.LinkClass/Public/CKEditor/LinkClass/Plugin.js

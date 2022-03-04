@@ -1,0 +1,18 @@
+{
+  "description": "",
+  "type": "neos-package",
+  "name": "netlogix/ckeditor-linkclass",
+  "require": {
+    "neos/neos": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Netlogix\\CkEditor\\LinkClass\\": "Classes/"
+    }
+  },
+  "extra": {
+    "neos": {
+      "package-key": "Netlogix.CkEditor.LinkClass"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file original="" product-name="Netlogix.CkEditor.LinkClass" source-language="en" datatype="plaintext">
+		<body>
+			<trans-unit id="label" xml:space="preserve">
+				<source><![CDATA[Link style]]></source>
+            </trans-unit>
+            <trans-unit id="placeholder" xml:space="preserve">
+            	<source><![CDATA[Choose link style]]></source>
+            </trans-unit>
+		</body>
+	</file>
+</xliff>
