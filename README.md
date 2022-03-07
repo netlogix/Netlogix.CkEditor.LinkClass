@@ -1,10 +1,18 @@
 # Netlogix.CkEditor.LinkClass
 
-This package adds to the CKEditor 5 the ability to select a class for a link. 
+This package extends the CKEditor 5 link editor with the functionality to add preconfigured CSS classes to selected links.
 
-The classes that can be added to a link are defined in the Settings.yaml file as shown as in the following example:
+## Installation
 
+```bash
+composer require netlogix/ckeditor-linkclass
 ```
+
+## Usage
+
+1. Define within the `Settings.yaml` which CSS classes for links are available for the concrete Neos CMS installation:
+
+```yaml
 Netlogix:
   CkEditor:
     LinkClass:
@@ -17,22 +25,36 @@ Netlogix:
           label: 'Secondary Button'
           class: 'btn btn-secondary'
           position: '20'
-        'dangerButton':
-          label: 'Danger Button'
-          class: 'btn btn-danger'
-          position: '15'
-        'infoButton':
-          label: 'Info Button'
-          class: 'btn btn-info'
-          position: '30'
 ```
 
-Afterwards, the ability to apply concrete classes must be allowed in the respective NodeTypes, as illustrated in the following example:
+2. Define which previously defined CSS classes can be applied to links in the individual NodeTypes properties of the concrete Neos CMS installation:
 
+```yaml
+'Neos.Demo:Text':
+  properties:
+    text:
+      ui:
+        inline:
+          editorOptions:
+            linking:
+              netlogixLinkClass:
+                primaryButton: true
+                secondaryButton: true
 ```
-linking:
-  netlogixLinkClass:
-      greenButton: true
-      whiteButton: true
-      blueButton: true
+
+## Contributions
+
+You are welcome to contribute by making pull requests, adding issues, etc.
+
+After modifying the JavaScript source code of the package, the JavaScript files can be rebuilt using the following steps:
+
+```bash
+cd Resources/Private/CKEditor/LinkClass
+nvm use
+yarn
+yarn build
 ```
+
+Then commit the modified files including `Plugin.js` and `Plugin.js.map`.
+
+

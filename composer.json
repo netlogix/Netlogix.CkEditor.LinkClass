@@ -1,15 +1,11 @@
 {
   "name": "netlogix/ckeditor-linkclass",
-  "description": "Adds to the CKEditor 5 the ability to select a class for a link",
+  "description": "Extends the CKEditor 5 link editor with the functionality to add preconfigured CSS classes to selected links",
   "type": "neos-package",
   "license": "MIT",
   "require": {
-    "neos/neos": "*"
-  },
-  "autoload": {
-    "psr-4": {
-      "Netlogix\\CkEditor\\LinkClass\\": "Classes/"
-    }
+    "neos/neos": "*",
+    "neos/neos-ui": "^4.0 || ^5.0 || ^7.0"
   },
   "extra": {
     "neos": {
