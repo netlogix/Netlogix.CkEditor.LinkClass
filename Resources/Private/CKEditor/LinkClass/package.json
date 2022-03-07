@@ -4,13 +4,8 @@
     "build": "neos-react-scripts build",
     "watch": "neos-react-scripts watch"
   },
-  "dependencies": {
-    "@ckeditor/ckeditor5-utils": "^11.0.0"
-  },
   "devDependencies": {
-    "@neos-project/neos-ui-extensibility": "~1.4.0",
-    "@neos-project/react-ui-components": "~1.4.0",
-    "lodash": "^4.17.11"
+    "@neos-project/neos-ui-extensibility": "^4.0"
   },
   "neos": {
     "buildTargetDirectory": "../../../Public/CKEditor/LinkClass"
