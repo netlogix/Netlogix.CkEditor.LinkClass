@@ -1,3 +1,8 @@
+# This package is archived
+
+Please consider using other solutions for adding classes to CKEditor Elements in Neos, eg. https://github.com/visol/Visol.Neos.LinkClass
+
+
 # Netlogix.CkEditor.LinkClass
 
 This package extends the CKEditor 5 link editor with the functionality to add preconfigured CSS classes to selected links.
